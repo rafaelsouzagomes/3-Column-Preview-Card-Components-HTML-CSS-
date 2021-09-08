@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*:before,
+*:after {
+     box-sizing: inherit;
+}
+
+:root{
+    --brightOrange:hsl(31, 77%, 52%);
+    --darkCian: hsl(184, 100%, 22%);
+    --veryDarkCian: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%);
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Big Shoulders Display', serif;
+}
+
+.carsMenu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0%;
+}
+
+.cards{
+    position: relative;
+    color: var(--veryLightGray);   
+    padding-bottom: 2rem;
+    padding-top: 2.5rem;
+    padding-left: 2.8rem;
+    width: 20rem;
+}
+
+.cards h1{
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-family: 'Big Shoulders Display', serif;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+}
+
+.cards p{
+    margin-top: 2.0rem;
+    font-family: 'Lexend Deca', serif;
+    color: var(--transparentWhite);
+    font-size: 0.90rem;
+    line-height: 1.5rem;
+    text-align: left;
+    width: 12rem;
+}
+
+.cards .learnMore{
+    margin-top: 4.5rem;
+    margin-bottom: 3.1rem;
+}
+
+.sedans{
+    background: var(--brightOrange);
+    border-radius: 0.8rem 0 0 0.8rem;   
+}
+
+.suvs{
+    background: var(--darkCian);
+}
+
+.luxury{
+    background: var(--veryDarkCian);
+    border-radius: 0 0.8rem 0.8rem 0;   
+}
+
+.learnMore{
+    position: relative;
+    background: var(--veryLightGray);
+    width:8rem;
+    height: 2.8rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;   
+}
+
+.learnMore a{
+    position: absolute;
+    left: 20%;
+    font-family:'Lexend Deca', serif;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.colorTextLearnMoreSedan{
+    color:var(--brightOrange);
+
+}
+
+.colorTextLearnMoreSuvs{
+    color:var(--darkCian)
+}
+
+.colorTextLearnMoreLuxury{
+    color:var(--veryDarkCian)
+}
+
+#learnMoreSedans:hover, #learnMoreSuvs:hover, #learnMoreLuxury:hover {
+    opacity: .8;
+}
+
+@media screen and (max-width: 62.5em){
+
+    .sedans{        
+        border-radius: 0.8rem 0.8rem 0 0 ;  
+    }
+
+    .luxury{
+        border-radius: 0  0 0.8rem 0.8rem;   
+    }
+}
