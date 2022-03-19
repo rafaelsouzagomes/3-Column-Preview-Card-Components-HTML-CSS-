@@ -19,13 +19,16 @@ html {
 body{
     font-size: 1rem;
     font-family: 'Big Shoulders Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carsMenu {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0%;
+    margin: 0 auto;
 }
 
 .cards{
